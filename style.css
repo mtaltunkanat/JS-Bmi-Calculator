@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: rgba(0,0,0,0.2);
+    padding: 40px 30px;
+    width: 50%;
+    min-width: 400px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    font-family: "Montserrat",sans-serif;
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+}
+
+.bmi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.bmi span{
+    font-weight: 500;
+}
+
+input[type="range"]{
+    width: 70%;
+    height: 3.5px;
+    appearance: none;
+    background-color: #4a4a4a;
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #efefef;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    cursor: pointer;
+}
+
+#weightValue,
+#heightValue{
+    color: #efefef;
+}
+
+#result{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #70e000;
+}
+#status{
+    font-size: 1.15rem;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #efefef;
+}
+#advice {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f77f00;
+    text-align: center;
+}
